@@ -1,7 +1,7 @@
 from jsonl import *
 from log_handler import logger
 
-INPUT = """{"alph{a": 3, "king": {"queen": 3}} {"2": []}  {"id": 1} 23 23 "cap'n crunch" [1,2, 3]"""
+INPUT = """{}{"alph{a": 3, "king": {"queen": 3}} [][]""{} {"2": []}  {"id": 1} 23 23 "cap\\"n crunch" [1,2, 3] []""3{}2.2""null"""
 
 import sys
 
