@@ -1,0 +1,11 @@
+start: jsonl+
+jsonl: internals
+object: "{" internals* "}"
+list: "[" internals* "]"
+internals: (ESCAPED_STRING | BYTES | WS | object | list)
+BYTES: _BYTE+
+_BYTE: /[^{}\[\]\s"]/
+
+%import common.ESCAPED_STRING
+%import common.WS
+
